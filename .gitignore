@@ -1,0 +1,9 @@
+node_modules/
+sessions/
+logs/
+backups/
+database/
+.env
+*.tmp
+*.corrupt
+store.json

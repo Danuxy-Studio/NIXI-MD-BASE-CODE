@@ -1,0 +1,22 @@
+{
+  "name": "nixi-md-base-code",
+  "version": "4.0.1",
+  "description": "Modular WhatsApp bot base framework maintained by Danuxy Studio / Nuxy",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "check": "node --check index.js",
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@itsliaaa/baileys": "0.3.18-final",
+    "chalk": "^5.6.2",
+    "chokidar": "^4.0.3",
+    "pino": "^10.3.1",
+    "axios": "^1.16.0",
+    "moment-timezone": "^0.5.48"
+  },
+  "author": "Danuxy Studio / Nuxy"
+}

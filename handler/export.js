@@ -1,0 +1,1 @@
+export default function exported(meta){return meta}

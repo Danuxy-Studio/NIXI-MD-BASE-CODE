@@ -1,0 +1,1 @@
+export default { root: "database", system: "database/system", plugins: "database/plugins" };

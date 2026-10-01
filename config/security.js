@@ -1,0 +1,1 @@
+export default { maxCommandLength: 200, maxArgs: 50, redactSecrets: true };

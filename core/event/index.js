@@ -1,0 +1,2 @@
+export class EventBus { constructor(){this.map=new Map()} on(event,fn){if(!this.map.has(event))this.map.set(event,new Set());this.map.get(event).add(fn);return()=>this.off(event,fn)} once(event,fn){const off=this.on(event,(...a)=>{off();fn(...a)});return off} off(event,fn){this.map.get(event)?.delete(fn)} async emit(event,...args){const fns=[...(this.map.get(event)||[])];for(const fn of fns){try{await fn(...args)}catch(e){this.map.get("plugin.error")?.forEach(h=>{try{h(e,{event})}catch{}})}}} removeAll(){this.map.clear()} }
+export const events=new EventBus();
